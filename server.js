@@ -5,6 +5,10 @@ const port = 3000;
 
 const routes = require('./routes');
 
+const cors = require('cors');
+app.use(cors());
+
+
 // Middleware to parse JSON bodies
 app.use(bodyParser.json());
 
